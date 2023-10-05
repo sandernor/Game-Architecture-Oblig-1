@@ -35,23 +35,7 @@ public class Bouncer : MonoBehaviour
 
     private void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Space))
-        //{
-        //    elapsedTime = 0;
-        //    lerped = false;
 
-        //    rb.AddForce(new Vector3(transform.position.x - ball.transform.position.x, transform.position.y - ball.transform.position.y, transform.position.z - ball.transform.position.z).normalized * 10000f);
-        //}
-        //Vector3 distV = new Vector3(ball.transform.position.x - transform.position.x, ball.transform.position.y - transform.position.y, ball.transform.position.z - transform.position.z);
-        //float dist = distV.magnitude;
-        //if (dist < 5f)
-        //{
-        //    Debug.Log("MMKAY");
-        //    elapsedTime = 0;
-        //    lerped = false;
-
-        //    rb.AddForce(new Vector3(transform.position.x - ball.transform.position.x, transform.position.y - ball.transform.position.y, transform.position.z - ball.transform.position.z).normalized * 10000f);
-        //}
         if (elapsedTime > timer && lerped == false)
         {
             elapsedTime2 = 0;
@@ -79,9 +63,6 @@ public class Bouncer : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //float angleRot = animationCurve.Evaluate(timer) * 90f;
-        //Vector3 locRot = new Vector3(transform.localRotation.x, -angleRot, transform.localRotation.z);
-        //transform.localEulerAngles = locRot;
 
         float percentageComplete = elapsedTime / timer;
         float percentageComplete2 = elapsedTime2 / timer;
